@@ -1,0 +1,105 @@
+.paste-container{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+}
+.search-container{
+    height:8vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+    border: 1px solid #eff1f6;
+    border-radius: 0.5rem;
+    margin-top: 7vh;
+}
+.search-container input{
+    height: 50%;
+    width: 60%;
+    border-radius: 0.5rem;
+    border: none;
+    padding-left: 12px;
+}
+.search-container button{
+    height: 50%;
+    width: 17%;
+    background-color: #22324f;
+    color: #eff1f6;
+    border-radius: 0.5rem;
+    font-size: 1.7vh;
+}
+.search-container button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: rgb(188, 53, 53);
+}
+.allPastes-container{
+    margin-top: 3vh;
+    width: 40vw;  
+}
+.individual-paste{
+    width: 100%;
+    height: 35vh;              
+    /* border: 1px solid #eff1f6; */
+    border-radius: 0.5rem;
+    margin-top: 2.5vh;
+    padding: 15px;
+    color:#eff1f6;
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color:#1f2229;
+}
+.paste-title{
+    font-weight: 700;
+    font-size: 3vh;
+}
+.paste-content{
+    flex: 1;                   /* takes remaining space */
+    overflow-y: auto;          /* vertical scroll */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-top: 3px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.paste-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.paste-content::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 10px;
+}
+
+.paste-buttons {
+    display: flex;
+    margin-top: 7px;
+    justify-content: flex-end;
+}
+.paste-buttons button {
+  width: 2.8vw;
+  height: 3.5vh;
+  background: none;
+  border: none;
+  color: #eff1f6;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 8px;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+.links{
+    color: #eff1f6;
+}
+.paste-buttons button:hover {
+  background-color: #343A46;
+}
+.paste-date{
+    font-size: 1.8vh;
+}
