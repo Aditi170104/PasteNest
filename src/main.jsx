@@ -9,8 +9,10 @@ import { Toaster } from 'react-hot-toast';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
-      <App />
-      <Toaster/>
+      <BrowserRouter basename="/react-paste-spa">
+        <App />
+        <Toaster />
+      </BrowserRouter>
     </Provider>
   </StrictMode>,
 )
