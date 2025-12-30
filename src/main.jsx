@@ -10,8 +10,12 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
       <BrowserRouter basename="/react-paste-spa">
+<<<<<<< HEAD
         <App />
         <Toaster />
+=======
+      <Toaster/>
+>>>>>>> c74cf64 (Made UI responsive and updated layout styles)
       </BrowserRouter>
     </Provider>
   </StrictMode>,
