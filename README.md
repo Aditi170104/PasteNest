@@ -1,16 +1,59 @@
-# React + Vite
+# PasteVault
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PasteVault is a React-based paste management application built to practice and demonstrate real-world frontend development concepts such as state management, routing, persistence, and UI interactions. The project focuses on learning by implementation rather than using pre-built abstractions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- Create, edit, view, and delete text pastes
+- Edit pastes using URL query parameters
+- View pastes via dynamic routing
+- Search pastes by title
+- Copy paste content to clipboard
+- Share pastes using Web Share API (with fallback)
+- Delete all pastes at once
+- Persistent data storage using localStorage
+- Clean, minimal UI with icon-based actions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Key Learnings & Concepts Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ⚛️ React Fundamentals
+- Functional components
+- `useState` for form and UI state
+- `useEffect` for syncing state with route changes
+- Controlled inputs
+- Component-based architecture
+
+---
+
+### 🧭 Routing (React Router DOM)
+- Client-side routing using `createBrowserRouter`
+- Dynamic routes using `useParams`
+- Query parameter handling using `useSearchParams`
+
+Routes implemented:
+- `/` → Create / Edit paste
+- `/pastes` → View all pastes
+- `/pastes/:id` → View individual paste
+
+---
+
+### 🧰 State Management (Redux Toolkit)
+- Centralized global state using Redux Toolkit
+- Created a Redux slice for paste operations
+- Used `useDispatch` and `useSelector` hooks
+- Implemented reducers for:
+  - Add paste
+  - Update paste
+  - Delete paste
+  - Reset all pastes
+
+```js
+const initialState = {
+  pastes: localStorage.getItem("pastes")
+    ? JSON.parse(localStorage.getItem("pastes"))
+    : []
+};
