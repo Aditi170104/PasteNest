@@ -5,11 +5,11 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className='navbar-container'>
-      <NavLink to='/' className='nav-link'>
+      <NavLink to='/' className={({isActive})=> isActive ? 'isActiveClass':'nav-link'}>
         <i class="fa-regular fa-house"></i>
         Home
       </NavLink>
-      <NavLink to='/pastes' className='nav-link'>
+      <NavLink to='/pastes' className={({isActive})=> isActive ? 'isActiveClass':'nav-link'}>
         <i class="fa-regular fa-paste"></i>
         Pastes
       </NavLink>
