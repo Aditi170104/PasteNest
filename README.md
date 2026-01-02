@@ -49,3 +49,6 @@ Routes implemented:
   - Update paste
   - Delete paste
   - Reset all pastes
+
+
+<img width="1053" height="585" alt="image" src="https://github.com/user-attachments/assets/d4c53978-cc49-4604-a66b-11af93fd4ab7" />
