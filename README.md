@@ -51,4 +51,6 @@ Routes implemented:
   - Reset all pastes
 
 
-<img width="1053" height="585" alt="image" src="https://github.com/user-attachments/assets/d4c53978-cc49-4604-a66b-11af93fd4ab7" />
+<img width="900" height="400" alt="image" src="https://github.com/user-attachments/assets/d4c53978-cc49-4604-a66b-11af93fd4ab7" />
+
+<img width="1032" height="682" alt="image" src="https://github.com/user-attachments/assets/9b99f70a-0472-4d3d-aa90-0fb5f2681a48" />
