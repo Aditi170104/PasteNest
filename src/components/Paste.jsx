@@ -85,15 +85,15 @@ function formatDate(isoString) {
                     {paste.content}
                   </div>
                   <div className='paste-buttons'>
-                    <button>
+                    <button title='Edit'>
                       <Link to={`/?pasteId=${paste?._id}`} className='links'> <i class="fa-regular fa-pen-to-square"></i> </Link>
                     </button>
-                    <button> 
+                    <button title='View'> 
                       <Link to={`/pastes/${paste?._id}`} className='links'> <i class="fa-regular fa-eye"></i> </Link>
                     </button>
-                    <button onClick={()=>handleDelete(paste?._id)}> <i class="fa-solid fa-trash"></i> </button>  
-                    <button onClick={()=>handleCopy(paste.content)}> <i class="fa-regular fa-copy"></i> </button>
-                    <button onClick={() => handleShare(paste)}> <i class="fa-solid fa-share-nodes"></i> </button>
+                    <button title='Delete' onClick={()=>handleDelete(paste?._id)}> <i class="fa-solid fa-trash"></i> </button>  
+                    <button title='Copy' onClick={()=>handleCopy(paste.content)}> <i class="fa-regular fa-copy"></i> </button>
+                    <button title='Share' onClick={() => handleShare(paste)}> <i class="fa-solid fa-share-nodes"></i> </button>
 
                   </div>
                   <div className='paste-date'>
